@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Forca</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Jogo da Forca</h1>
+  </header>
+  <div class="controls">
+    <button id="clear-ranking">Limpar Ranking</button>
+    <button id="new-game">Novo Jogo</button>
+  </div>
+  <main>
+    <div class="content-img">
+      <img id="hangman-img" src="images/img1.png" width="250px" alt="Jogo da forca">
+    </div>
+    <div class="content">
+      <div id="guess-word" class="guess-word"></div>
+      <div id="clue" class="clue"></div>
+      <div id="buttons" class="btns"></div>
+      <div class="score">Pontuação: <span id="score">0</span></div>
+    </div>
+  </main>
+  <aside class="ranking">
+    <h2>Ranking</h2>
+    <ol id="ranking-list"></ol>
+  </aside>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+
+
+body {
+  background-color:   #d0e0e3 ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+}
+h1::after{
+  content: "🕵️‍♂️";
+  font-size: 48px;
+  margin-left: 9px;
+}
+
+
+.controls {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4aaa39;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(1, 2, 4, 12);
+  transition: all 0.3s ease; 
+}
+
+button:disabled {
+  background-color: #c0c0c0;
+  color: #606060;
+  cursor: not-allowed;
+}
+
+button:hover {
+  opacity: 0.8;
+  transform: translateY(-2px);
+}
+
+#clear-ranking {
+  background-color: rgb(63, 15, 185);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 200px;
+  max-width: 400px;
+}
+
+.guess-word {
+  display: flex;
+  gap: 10px;
+  font-size: 50px;
+}
+
+.btns button {
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  background-color: #4a63bf;
+  border: none;
+  border-radius: 3px;
+}
+
+.clue {
+  font-size: 18px;
+}
+
+.score {
+  font-size: 20px;
+}
+
+.ranking {
+  margin-top: 20px;
+  width: 300px;
+  text-align: left; 
+  padding-left: 0; 
+}
+
+.ranking h2 {
+  font-size: 24px;
+  margin-bottom: 20px; 
+  margin-left: 0; 
+}
+
+.ranking h2::after {
+  content: "🏆";
+  font-size: 28px;
+  margin-left: 9px; 
+}
+
+#ranking-list {
+  list-style: none;
+  padding: 0;
+}
+
+#ranking-list li {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+
+@media (max-width: 670px) {
+  main {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .controls {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
